@@ -6,8 +6,7 @@ export default function Home() {
     return (
       <div>
         <nav
-          className="navbar navbar-expand-lg"
-          style={{ backgroundColor: "#C19EE0", color: "white" }}>
+          className="navbar navbar-expand-lg bg-purple-400">
 
           <div className="container-sm">
             <a className="navbar-brand" href="#">Menu</a>
@@ -33,31 +32,30 @@ export default function Home() {
           </div>
         </nav>
         <div>
-        <h1 style={{ color: "purple" }}>Olivia Rodrigo</h1>
+        <h1 className="text-color-purple">Olivia Rodrigo</h1>
         <Image
           src="/concertphoto.jpg"
           width={1290}
           height={750}
           alt="Picture of Olivia Rodrigo on a concert"
         />
-        <h2 style={{color: "purple"}}>Most popular Songs</h2>
+        <h2 className='text-color-purple'>Most popular Songs</h2>
         </div>
 
           <div className="row">
-            
             <div className="col-md-4">
-              <div className="card border-secondary mb-3 h-100" style={{ maxWidth: "25rem" }}>
-                <div style={{color: "darkred", fontFamily:"Comic Sans MS"}}className="card-header">Deja Vu</div>
-                <div className="card-body">
-                  <Image src="/Dejavu.jpg" width={365} height={315} alt="Picture of Olivia Rodrigo" />
+              <div className="card border-secondary mb-3 h-100 maxWidth-25">
+                <div className="card-header text-color-darkred">Deja Vu</div>
+                  <div className="card-body">
+                  <Image src="/Dejavu3.jpg" width={365} height={315} alt="Picture of Olivia Rodrigo" />
                 </div>
                 <p className="card-text">
                   Deja Vu is an energetic indie-pop–influenced track with dreamy synths, playful details, and a bright, experimental production. It shows Rodrigo’s creative side, blending soft verses with a sharp, catchy chorus.</p>
               </div>
             </div>
             <div className="col-md-4">
-              <div className="card border-secondary mb-3 h-100" style={{ maxWidth: "25rem" }}>
-                <div style={{color: "darkred", fontFamily:"Comic Sans MS"}}className="card-header">Drivers License</div>
+              <div className="card border-secondary mb-3 h-100 maxWidth-25">
+                <div className="card-header text-color-darkred">Drivers License</div>
                 <div className="card-body">
                   <Image src="/DriversLicense.jpg" width={350} height={300} alt="Picture of Olivia Rodrigo" />
                 </div>
@@ -67,10 +65,10 @@ export default function Home() {
           </div>
 
           <div className="col-md-4">
-            <div className="card border-secondary mb-3 h-100" style={{ maxWidth: "25rem" }}>
-              <div style={{color: "darkred", fontFamily:"Comic Sans MS"}}className="card-header">Vampire</div>
+            <div className="card border-secondary mb-3 h-100 maxWidth-25">
+              <div className="card-header text-color-darkred">Vampire</div>
               <div className="card-body">
-                <Image src="/vampire.jpg" width={350} height={350} alt="Picture of Olivia Rodrigo" />
+                <Image src="/vampire3.jpg" width={350} height={350} alt="Picture of Olivia Rodrigo" />
               </div>
               <p className="card-text">
                 Vampire is a dramatic pop song that mixes delicate piano notes with powerful, rock-inspired bursts. The track creates tension through its dynamic shifts and showcases a darker, more mature sound from Olivia Rodrigo.</p>
@@ -78,14 +76,25 @@ export default function Home() {
           </div>
         </div>
 
-        <h2 style={{color: "purple"}}>History</h2>
-        
-          <div className="card text-white mb-3" style={{ maxWidth: "30rem", backgroundColor:"#621708" }}>
+        <h2 className='text-color-purple'>History</h2>
+
+        <div className="history">
+
+          <div className="col-md-4">
+          <div className="card text-white mb-3 maxWidth-30">
             <div className="card-body">
               <h4 className="card-title">Acting Career</h4>
               <p className="card-text">Olivia Rodrigo appeared in the Disney Channel series “Bizaardvark,” where she gained her first major acting experience, and later starred in “High School Musical: The Musical: The Series” on Disney+, which significantly boosted her visibility. These roles helped her build a strong fan base, showcased her performance skills, and ultimately played a key role in launching her successful music career by placing her in the spotlight.</p>
             </div>
+            </div>
+            <div className="col-md-4">
+            <div className="mb-3 h-100 maxWidth-25">
+                <Image src="/highschoolmusical1.jpg" width={750} height={450} alt="Picture of Olivia Rodrigo" />
+              </div>
+            </div>
           </div>
+        </div>
+        
 
         
     </div>
