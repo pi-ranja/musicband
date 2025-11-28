@@ -78,25 +78,31 @@ export default function Home() {
 
         <h2 className='text-color-purple'>History</h2>
 
-        <div className="history">
-
+        <div className="row history">
           <div className="col-md-4">
-          <div className="card text-white mb-3 maxWidth-30">
-            <div className="card-body">
-              <h4 className="card-title">Acting Career</h4>
-              <p className="card-text">Olivia Rodrigo appeared in the Disney Channel series “Bizaardvark,” where she gained her first major acting experience, and later starred in “High School Musical: The Musical: The Series” on Disney+, which significantly boosted her visibility. These roles helped her build a strong fan base, showcased her performance skills, and ultimately played a key role in launching her successful music career by placing her in the spotlight.</p>
-            </div>
-            </div>
-            <div className="col-md-4">
-            <div className="mb-3 h-100 maxWidth-25">
-                <Image src="/highschoolmusical1.jpg" width={750} height={450} alt="Picture of Olivia Rodrigo" />
-              </div>
+            <div className="card text-white mb-3 maxWidth-35">
+              <div className="card-body">
+                <h4 className="card-title">Acting Career</h4>
+                <p className="card-text">
+                  Olivia Rodrigo began her acting career with the Disney Channel series “Bizaardvark”, where she played Paige Olvera and gained her first major exposure. Her breakthrough came with her role as Nini Salazar-Roberts in “High School Musical: The Musical: The Series” on Disney+, where she showcased both her acting and musical talent. Through these roles, she developed confidence, creativity, and a growing fan base, which ultimately helped launch her successful career as a music artist.</p>
             </div>
           </div>
         </div>
-        
 
-        
+
+          <div className="col-md-8">
+            <div className="mb-3 h-100">
+              <Image 
+                src="/highschoolmusical1.jpg" 
+                width={750} 
+                height={400} 
+                alt="Picture of Olivia Rodrigo" 
+              />
+            </div>
+          </div>
+        </div>
+
+
     </div>
   );
 }

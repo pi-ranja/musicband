@@ -3,3 +3,4 @@
 .text-color-darkred{color:rgb(101, 16, 16); font-family: Comic Sans MS;}
 .maxWidth-25{max-width: 25rem;}
 .maxWidth-30{max-width: 30rem; background-color: rgb(101, 16, 16);}
+.maxWidth-35{max-width: 30rem; background-color: rgb(101, 16, 16); height: 400;}
