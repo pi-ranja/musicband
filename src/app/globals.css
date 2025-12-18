@@ -7,3 +7,4 @@
 .maxWidthHeight{max-width: 750px; height: 400px;}
 .bg-red-400{background-color: rgb(104, 0, 149);}
 .bg-black-text-white{background-color: rgb(64, 58, 58); color: rgb(255, 237, 237); font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+.bg-red-text-white{background-color: rgb(175, 37, 41); color: rgb(226, 158, 158); font-family:'Times New Roman', Times, serif;}

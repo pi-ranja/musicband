@@ -18,55 +18,78 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-black-text-white">
-            {sent && (
-        <div className="alert alert-success" role="status">
-          Nachricht wurde gesendet
-        </div>
-      )}
+    <footer className="bg-black text-white px-8 py-12">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div>
+          <h3 className="text-xl font-semibold mb-4">Contact</h3>
 
+          {sent && (
+            <div className="alert alert-success mb-3" role="status">
+              Nachricht wurde gesendet
+            </div>
+          )}
 
+          <form onSubmit={handleSubmit} className="space-y-3">
+            <div>
+              <label className="form-label">Name</label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Your Name"
+                required
+              />
+            </div>
 
-      <div className="bg-black-text-white centered-text">
-        <form onSubmit={handleSubmit} className="container">
-          <div className="mb-3">
-            <label className="form-label" htmlFor="name">Name</label>
-            <input
-              name="name"
-              type="text"
-              placeholder="Your Name"
-              className="form-control"
-              required
-            />
-          </div>
+            <div>
+              <label className="form-label">E-mail</label>
+              <input
+                type="email"
+                className="form-control"
+                placeholder="Your E-mail"
+                required
+              />
+            </div>
 
-          <div className="mb-3">
-            <label className="form-label" htmlFor="email">E-mail</label>
-            <input
-              name="email"
-              type="email"
-              placeholder="Your E-mail"
-              className="form-control"
-              required
-            />
-          </div>
+            <div>
+              <label className="form-label">Message</label>
+              <textarea
+                className="form-control"
+                placeholder="Your Message"
+                required
+              />
+            </div>
 
-          <div className="mb-3">
-            <label className="form-label" htmlFor="message">Message</label>
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              className="form-control"
-              required
-            />
-          </div>
-
-          <div>
             <button className="btn bg-purple-400 w-100" type="submit">
               Senden
             </button>
+          </form>
+        </div>
+
+        <div>
+          <h3 className="text-xl font-semibold mb-4">Follow Us</h3>
+
+          <div className="mb-3">
+            <a
+              className="text-center border border-purple-400 rounded px-3 py-2 bg-red-text-white"
+              href="https://www.instagram.com/oliviarodrigo"
+            >
+              Instagram
+            </a>
+            <a
+              className="text-center border border-purple-400 rounded px-3 py-2 bg-red-text-white"
+              href="https://open.spotify.com"
+            >
+              Spotify
+            </a>
+
+            <a
+              className="text-center border border-purple-400 rounded px-3 py-2 bg-red-text-white"
+              href="https://www.youtube.com"
+            >
+              YouTube
+            </a>
           </div>
-        </form>
+        </div>
       </div>
 
       {showModal && (
@@ -78,26 +101,6 @@ export default function Footer() {
         >
         </div>
       )}
-            <h2>Follow Us</h2>
-      <a
-        className="me-3 bg-black-text-white"
-        href="https://www.instagram.com/oliviarodrigo?igsh=MTd4OWY3ZmcycjgwOA=="
-      >
-        Instagram
-      </a>
-      <a
-        className="me-3 bg-black-text-white"
-        href="https://open.spotify.com/intl-de/artist/1McMsnEElThX1knmY4oliG?si=1OgIzrVvSsSeEwr0dblrXg&nd=1&dlsi=04fd0bbbecb14d83"
-      >
-        Spotify
-      </a>
-      <a
-        className="me-3 bg-black-text-white"
-        href="https://www.youtube.com/channel/UCy3zgWom-5AGypGX_FVTKpg"
-      >
-        YouTube
-      </a>
-
     </footer>
   );
 }
