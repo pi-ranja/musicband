@@ -4,3 +4,6 @@
 .maxWidth-25{max-width: 25rem;}
 .maxWidth-30{max-width: 30rem; background-color: rgb(101, 16, 16);}
 .maxWidth-35{max-width: 30rem; background-color: rgb(101, 16, 16); height: 400;}
+.maxWidthHeight{max-width: 750px; height: 400px;}
+.bg-red-400{background-color: rgb(104, 0, 149);}
+.bg-black-text-white{background-color: rgb(64, 58, 58); color: rgb(255, 237, 237); font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
